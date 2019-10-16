@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    --purpleLight: #302d43;
+    --purpleDark: #282639;
+    --neonGreen: #92cf48;
+    --lightGrey: #f4f6f9;
+    --darkGrey: #eaedf3;
+}
+#contentArea{
+    position: absolute;
+    left: 258px;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    padding-top: 0;
+    border: 2px solid var(--neonGreen);
+}

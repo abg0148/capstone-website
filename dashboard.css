@@ -1,0 +1,106 @@
+
+
+*{
+    box-sizing: border-box;
+    --purpleLight: #302d43;
+    --purpleDark: #282639;
+    --neonGreen: #92cf48;
+    --lightGrey: #f4f6f9;
+    --darkGrey: #eaedf3;
+}
+body{
+    background: var(--lightGrey);
+}
+#sideMenu{
+    background: var(--purpleLight);
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+}
+
+#sideMenu>nav{
+    padding-top: 100px;
+}
+#sideMenu>nav>a{
+    
+    display: block;
+    color: var(--darkGrey);
+    text-decoration: none;
+    padding: 15px 23px;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+
+}
+#sideMenu>nav>a:hover{
+    background: var(--purpleDark);
+    border-left: 5px solid var(--neonGreen);
+}
+#sideMenu>nav>a:hover>img{
+    filter: unset;
+}
+#sideMenu>nav>a>img{
+    
+    margin-right: 30px;
+    filter: grayscale(1);
+
+}
+/*
+this has to be implemented later
+#sideMenu>nav>a.selected{
+    background: var(--purpleDark);
+    border-left: 5px solid var(--neonGreen);
+    padding: 15px 18px;
+    
+}*/
+#sideMenu>nav>a.selected>img{
+    filter: unset;
+}
+header{
+    margin-left: 258px;
+    padding: 0px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+header>p{
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: 700;
+}
+#heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+#notifications{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    background: var(--darkGrey);
+    max-width: 850px;
+    
+}
+
+
+#notifications>li{
+    background: var(--neonGreen);
+    transition: all 0.5s ease-in-out;
+    margin: 5px;
+    padding: 5px;
+    max-width: 800px;
+    color: var(--lightGrey)
+
+}
+#notifications>ul{
+   color: var(--darkGrey);
+   max-width: 850px;
+}

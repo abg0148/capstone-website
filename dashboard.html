@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/ico" href="thapar_logo.svg" />
+    <title>Dashboard | Hostel Automation</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link rel="stylesheet" type="text/css" href="dashboard-contentarea.css">
+    <script  src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+        
+    <div id=sideMenu >
+        <nav>
+            <a href="http://192.168.43.90/" class="selected"><img src="/dashboard-icons/room-icon.svg" width="15px">ROOM</a>
+            <a href="#" class=""><img src="/dashboard-icons/mess-icon.svg" width="15px">MESS</a>
+            <a href="#" class=""><img src="/dashboard-icons/complaints-icon.svg" width="15px">COMPLAINTS</a>
+            <a href="#" id="btnLogout" class=""><img src="/dashboard-icons/logOut-icon.svg" width="15px">LOGOUT</a>
+        </nav>
+    </div>
+    
+    <header>
+        <p>DASHBOARD</p>
+    </header>
+    
+    <div id=contentArea>
+        <p>
+            <div id=heading></div>
+            <ul id=notifications style="list-style-type:square"></ul>
+        </p>
+
+    </div>
+
+    <script src='dashboard.js'>
+    </script>
+    
+</body>
+</html>

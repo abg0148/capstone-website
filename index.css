@@ -1,0 +1,118 @@
+#header {
+    top:0;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    color: white;
+    background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+    border: 1px solid black;
+    margin: 0px;
+    text-align: center;
+    padding: 6.5px;
+    top:0;
+    left:0;
+    right:0;
+    position: absolute;
+}
+#middle {
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    color: black;
+    border: 1px solid black;
+    padding:10px;
+    margin: 0px;
+    text-align:center;
+    bottom: 0;
+    top: 82px;
+    left: 0;
+    right:0;
+    position: absolute;
+}
+#footer {
+    background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+    color: white;
+    text-align: right;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+#middleText {
+    background: linear-gradient(to bottom, rgba(0,110,46,1) 0%,rgba(0,110,46,1) 100%);
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    width:300px;
+    display:inline-block;
+}
+#middleText>p{
+    
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+#loginForm {
+    padding: 5px;
+    border: 1px solid black;
+    width: 300px;
+    height:auto;
+    display: inline-block;
+}
+#loginButton {
+    padding: 5px;
+    margin: 5px;
+    margin-left:112px;
+    text-align: left;
+    transition:  1s ease-in-out;
+
+}
+#loginButton>button{
+    border-radius: 2px;
+    width: 160px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+}
+#loginButton>button[type="submit"]:active{
+    background-color:darkcyan;
+    color:white;
+}
+#loginButton>button:hover{
+    background-color:lightblue;
+    color:white;
+}
+#userName{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#userName>label{
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+#password{
+    margin-bottom: 20px;
+}
+#password>label{
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    --purpleLight: #302d43;
+    --purpleDark: #282639;
+    --neonGreen: #92cf48;
+    --lightGrey: #f4f6f9;
+    --darkGrey: #eaedf3;
+}
+body{
+    background: var(--purpleLight);
+}
+
