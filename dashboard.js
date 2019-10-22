@@ -7,7 +7,7 @@
             console.log(user.uid);
             console.log("hello world");
 
-            document.getElementById('heading').innerText='NOTIFICATIONS'
+            document.getElementById('heading').innerText='NOTIFiCATIONS'
             ulist = document.getElementById('notifications')
             //create object reference
             dbref = firebase.database().ref().child('notifications')
