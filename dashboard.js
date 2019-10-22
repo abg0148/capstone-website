@@ -5,6 +5,7 @@
         {
             // User is signed in.
             console.log(user.uid);
+            console.log("hello world");
 
             document.getElementById('heading').innerText='NOTIFICATIONS'
             ulist = document.getElementById('notifications')
