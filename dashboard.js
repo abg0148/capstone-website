@@ -4,6 +4,7 @@
         if (user) 
         {
             // User is signed in.
+            console.log(user.uid);
 
             document.getElementById('heading').innerText='NOTIFICATIONS'
             ulist = document.getElementById('notifications')
