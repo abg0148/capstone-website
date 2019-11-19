@@ -16,6 +16,7 @@
                 kk.on('value',snap=>{
                     roomurl=snap.val()
                     document.getElementById('dashboard-room').href=roomurl;
+                    console.log(roomurl)
                 })
             })
             
