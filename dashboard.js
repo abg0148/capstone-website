@@ -6,20 +6,28 @@
             // User is signed in.
             console.log(user.uid);
             
-
+            //link url of person's room to room tag in dashboard
             var userId= user.uid;
-            r=1;
+
             k=firebase.database().ref().child('users').child(userId).child('RoomNo');
             k.on('value',snap=>{
                 roomNo=snap.val();
                 kk=firebase.database().ref().child('roomURL').child(roomNo);
                 kk.on('value',snap=>{
                     roomurl=snap.val()
+                    roomurl= "http://"+roomurl;
                     document.getElementById('dashboard-room').href=roomurl;
                     console.log(roomurl)
                 })
             })
+
+            //
             
+            //writing mess menu
+            //firebase.database().ref().child('notifications').set({
+            //    "fees" : "fees has increased in thapar",
+            //    "menu" : "menu has been changed in Hostel M" 
+            //})
             
             document.getElementById('heading').innerText='NOTIFiCATIONS'
             ulist = document.getElementById('notifications')

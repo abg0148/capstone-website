@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script  src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+      <script src="common.js"></script>
+  </head>
+<body>
+
+<h2>COMPLAINT FORM</h2>
+<p>Select the service you require:</p>
+
+  <select name="service" id="service">
+    <option value="carpenter">CARPENTER</option>
+    <option value="electricity">ELECTRICIAN</option>
+    <option value="plumbing">PLUMBER</option>
+  </select>
+  <br>
+  <br>
+  <textarea rows = "5" cols = "60" id="complaint" placeholder="enter your complaint here.."></textarea>
+  <br>
+  <br>
+  
+  
+  <button id="submit">SUBMIT</button>
+  
+  <br>
+  <br>
+  <hr>
+
+  <h2>My Complaints</h2>
+  <ul>
+    <li>
+      <pre>CARPENTER:</pre>
+      <pre id="carpenter-complaint"></pre>
+      <button id="carpenter-complaint-withdraw">withdraw</button>
+    </li>
+    <li>
+      <pre>ELECTRICITY:</pre>
+      <pre id="electricity-complaint"></pre>
+      <button id="electricity-complaint-withdraw">withdraw</button>
+    </li>
+    <li>
+      <pre>PLUMBING:</pre>
+      <pre id="plumbing-complaint"></pre>
+      <button id="plumbing-complaint-withdraw">withdraw</button>
+    </li>
+  </ul>
+
+
+
+  <script src="complaint.js"></script>
+
+</body>
+</html>
