@@ -29,7 +29,8 @@
             //    "menu" : "menu has been changed in Hostel M" 
             //})
             
-            document.getElementById('heading').innerText='NOTIFiCATIONS'
+            document.getElementById('heading').innerText='NOTIFICATIONS'
+            document.getElementById('heading2').innerText='E-BILL'
             ulist = document.getElementById('notifications')
             //create object reference
             dbref = firebase.database().ref().child('notifications')
@@ -47,6 +48,13 @@
                     ulist.appendChild(li)
                 }
             })
+
+            kkk=firebase.database().ref().child("users").child(user.uid).child("ElectricityBill")
+            kkk.on('value',snap=>{
+                var bill=snap.val()
+                document.getElementById("ebillunits").innerText=bill+" units";
+            })
+
             const btnLogout=document.getElementById('btnLogout');
             btnLogout.addEventListener('click',e=>{
                 firebase.auth().signOut();

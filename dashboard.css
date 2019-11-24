@@ -81,6 +81,13 @@ header>p{
     font-weight: 700;
     
 }
+#heading2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
 #notifications{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
